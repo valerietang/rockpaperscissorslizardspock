@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             (userChoice === 'scissors' && compChoice === 'lizard') ||
             (userChoice === 'lizard' && compChoice === 'paper') ||
             (userChoice === 'paper' && compChoice === 'Spock')) {
-            return 'You win. Live long and prosper. - Mr.Spock';
+            return 'You won. Live long and prosper. - Mr.Spock';
         } else {
-            return 'You lose. Computers make excellent and efficient servants, but I have no wish to serve under them. - Mr.Spock';
+            return 'You lost. Computers make excellent and efficient servants, but I have no wish to serve under them. - Mr.Spock';
         }
     }
 });
