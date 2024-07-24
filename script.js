@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const choices = document.querySelectorAll('.choice');
     const resultText = document.getElementById('result-text');
-    const choicesArray = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const choicesArray = ['rock', 'paper', 'scissors', 'lizard', 'Spock'];
 
     choices.forEach(choice => {
         choice.addEventListener('click', (e) => {
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             (userChoice === 'paper' && compChoice === 'rock') ||
             (userChoice === 'scissors' && compChoice === 'paper') ||
             (userChoice === 'rock' && compChoice === 'lizard') ||
-            (userChoice === 'lizard' && compChoice === 'spock') ||
-            (userChoice === 'spock' && compChoice === 'scissors') ||
+            (userChoice === 'lizard' && compChoice === 'Spock') ||
+            (userChoice === 'Spock' && compChoice === 'scissors') ||
             (userChoice === 'scissors' && compChoice === 'lizard') ||
             (userChoice === 'lizard' && compChoice === 'paper') ||
-            (userChoice === 'paper' && compChoice === 'spock')) {
+            (userChoice === 'paper' && compChoice === 'Spock')) {
             return 'You win. Live long and prosper. - Mr.Spock';
         } else {
             return 'You lose. Computers make excellent and efficient servants, but I have no wish to serve under them. - Mr.Spock';
